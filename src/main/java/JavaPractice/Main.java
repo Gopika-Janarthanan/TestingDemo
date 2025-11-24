@@ -1,7 +1,7 @@
 package JavaPractice;
 
 public class Main{
-    public static void main() {
+    public static void main(String [] args) {
         Vehicle v  = new Truck();// Parent reference
         v.stop(); // Truck's owner
         v=new Bus(); // reassign
