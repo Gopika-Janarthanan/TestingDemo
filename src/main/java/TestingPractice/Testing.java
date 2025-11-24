@@ -1,4 +1,4 @@
-package org.example;
+package TestingPractice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Testing {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\unknown user\\Documents\\Browser\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\unknown user\\OneDrive\\Documents\\Browser\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://demo.nopcommerce.com/");
@@ -22,8 +22,8 @@ public class Testing {
         searchbtn.click();
         Thread.sleep(2000);
 
-        WebElement loginnav = driver.findElement(By.className("ico-login"));
-        loginnav.click();
+     //   WebElement loginnav = driver.findElement(By.className("ico-login"));
+     //   loginnav.click();
 
         Thread.sleep(2000);
         driver.quit();
