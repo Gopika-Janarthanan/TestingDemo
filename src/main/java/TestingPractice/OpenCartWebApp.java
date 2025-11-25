@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class OpenCartWebApp {
     public static void main(String[] args) {
-        locators();
+        //locators();
+        cssSelectors();
 
     }
     static void locators(){
@@ -19,6 +20,15 @@ public class OpenCartWebApp {
         List <WebElement> image = driver.findElements(By.tagName("img"));
         System.out.println("Count of image in the page :" +image.size());
         driver.quit();
+    }
+    static void cssSelectors(){
+        WebDriver d = new ChromeDriver();
+        d.get("https://demo.nopcommerce.com/");
+        d.manage().window().maximize();
+        d.findElement(By.cssSelector("input#small-searchterms")).sendKeys("Computer");
+        d.quit();
+
+
     }
 
 }
