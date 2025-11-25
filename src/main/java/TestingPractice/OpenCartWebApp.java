@@ -8,6 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class OpenCartWebApp {
     public static void main(String[] args) {
+        locators();
+
+    }
+    static void locators(){
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.opencart.com/");
         driver.manage().window().maximize();
@@ -16,4 +20,5 @@ public class OpenCartWebApp {
         System.out.println("Count of image in the page :" +image.size());
         driver.quit();
     }
+
 }
