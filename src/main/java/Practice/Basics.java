@@ -1,4 +1,4 @@
-package Exception;
+package Practice;
 
 public class Basics {
     public static void main(String [] args){
