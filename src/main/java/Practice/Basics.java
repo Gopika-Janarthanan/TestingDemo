@@ -2,15 +2,8 @@ package Practice;
 
 public class Basics {
     public static void main(String [] args){
-        /*Number Programs
+        /*
 
-Check whether a number is Prime
-
-Print all Prime numbers between 1 and N
-
-Generate Fibonacci series up to N terms
-
-Find Nth Fibonacci number
 
 Check whether a number is Armstrong
 
@@ -89,15 +82,58 @@ Floyd’s Triangle
 Hollow square pattern
 
 Diamond pattern*/
-    twonum(12,0);
-    }
-    static void twonum(int a , int b){
-        try{
-            int c = a/b;
+        System.out.println("Prime Number");
+        System.out.println(prime(5));
+        System.out.println(prime(19));
+        primenum(19);
+        System.out.println();
+        System.out.println("Fibonacci series");
+        fibo(10);
+        System.out.println();
+        System.out.println(fibonacci(10));
+
+
+
+}
+        // Prime or not
+        static boolean prime(int n){
+              if(n<2){
+                   return false;
+                 }
+                for(int i=2;i*i<n;i++){
+                    if(n%i==0){
+                      return false;
+                    }
+                 }
+        return true;
+        }
+        //Print all Prime numbers between 1 and N
+          static void primenum(int n){
+             for(int i=0;i<=n;i++){
+                   if(prime(i)){
+                        System.out.print(i + " ");
+                 }
+             }
+        }
+        //Find 1 - Nth Fibonacci number
+        static void fibo(int n){
+            int a=0;
+            int b=1;
+            int c=0;
+        for(int i=0;i<n;i++){
+            System.out.print(a +" ");
+            c=a+b;
+            a=b;
+            b=c;
 
         }
-        catch (Exception e ){
-            System.out.println(e);
         }
-    }
+       //Find Nth Fibonacci number
+        static int fibonacci(int n){
+        if(n<2){
+            return n;
+        }
+            return fibonacci(n-1)+fibonacci(n-2);
+        }
+
 }
