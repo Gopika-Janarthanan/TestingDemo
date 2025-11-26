@@ -1,6 +1,6 @@
 package Practice;
 
-public class Basics {
+public class Main {
     public static void main(String [] args){
         /*
 
@@ -82,15 +82,16 @@ Floyd’s Triangle
 Hollow square pattern
 
 Diamond pattern*/
+
         System.out.println("Prime Number");
         System.out.println(prime(5));
         System.out.println(prime(19));
         primenum(19);
         System.out.println();
         System.out.println("Fibonacci series");
-        fibo(10);
+        Fibonacci.fibo(10);
         System.out.println();
-        System.out.println(fibonacci(10));
+        System.out.println(Fibonacci.fibonacci(10));
 
 
 
@@ -115,25 +116,6 @@ Diamond pattern*/
                  }
              }
         }
-        //Find 1 - Nth Fibonacci number
-        static void fibo(int n){
-            int a=0;
-            int b=1;
-            int c=0;
-        for(int i=0;i<n;i++){
-            System.out.print(a +" ");
-            c=a+b;
-            a=b;
-            b=c;
 
-        }
-        }
-       //Find Nth Fibonacci number
-        static int fibonacci(int n){
-        if(n<2){
-            return n;
-        }
-            return fibonacci(n-1)+fibonacci(n-2);
-        }
 
 }
