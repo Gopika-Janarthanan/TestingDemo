@@ -90,6 +90,9 @@ Diamond pattern */
         Fibonacci.fibo(10);
         System.out.println();
         System.out.println(Fibonacci.fibonacci(10));
+        System.out.println("Armstrong Number");
+        System.out.println(Armstrong.armstrong(153));
+        System.out.println(Armstrong.armstrong(12));
 
 
 }
