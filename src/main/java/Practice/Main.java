@@ -3,16 +3,6 @@ package Practice;
 public class Main {
     public static void main(String [] args){
 /*
-Check whether a number is Armstrong
-
-Print all Armstrong numbers in a given range
-
-Find Factorial of a number
-
-Check if a number is Palindrome
-
-Reverse a number
-
 Sum of digits of a number
 
 Count digits in a number
@@ -57,7 +47,7 @@ Sort an array in ascending order
 
 Remove duplicate elements from an array
 
-Find the second largest number in an array
+Find the second-largest number in an array
 
 Reverse an array
 
@@ -93,6 +83,17 @@ Diamond pattern */
         System.out.println("Armstrong Number");
         System.out.println(Armstrong.armstrong(153));
         System.out.println(Armstrong.armstrong(12));
+        Armstrong.arms(3000);
+        System.out.println();
+        System.out.println("Factorial");
+        System.out.println(Factorial.fact(4));
+        Factorial.factorial(4);
+        System.out.println();
+        System.out.println("Reverse a number");
+        System.out.println(Reverse.reverse(123));
+        System.out.println(Reverse.rev(234567));
+        System.out.println("Palindrone of a number");
+        System.out.println(Palindrome.palindrome(1231));
 
 
 }
