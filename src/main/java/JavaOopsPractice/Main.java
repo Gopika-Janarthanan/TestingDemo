@@ -1,4 +1,4 @@
-package JavaPractice;
+package JavaOopsPractice;
 
 public class Main{
     public static void main(String [] args) {

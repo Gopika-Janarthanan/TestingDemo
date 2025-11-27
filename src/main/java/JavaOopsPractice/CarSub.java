@@ -1,4 +1,4 @@
-package JavaPractice;
+package JavaOopsPractice;
 
 import java.util.ArrayList;
 

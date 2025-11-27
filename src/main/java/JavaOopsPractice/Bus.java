@@ -1,4 +1,4 @@
-package JavaPractice;
+package JavaOopsPractice;
 
 public class Bus implements Vehicle {
     @Override

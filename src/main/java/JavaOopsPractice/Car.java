@@ -1,4 +1,4 @@
-package JavaPractice;
+package JavaOopsPractice;
 
 public class Car implements Vehicle {
 

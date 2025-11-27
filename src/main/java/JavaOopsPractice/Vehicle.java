@@ -1,4 +1,4 @@
-package JavaPractice;
+package JavaOopsPractice;
 
 public interface Vehicle {
     void speed();
