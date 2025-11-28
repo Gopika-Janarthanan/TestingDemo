@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Numbers;
 import java.lang.StringBuilder;
 public class Reverse {
     //Reverse a number

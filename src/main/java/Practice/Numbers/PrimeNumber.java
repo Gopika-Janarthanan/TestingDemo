@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Numbers;
 
 public class PrimeNumber {
     // Prime or not

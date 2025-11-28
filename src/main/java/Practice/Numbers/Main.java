@@ -1,14 +1,8 @@
-package Practice;
+package Practice.Numbers;
 
 public class Main {
     public static void main(String [] args){
 /*
-Sum of digits of a number
-
-Count digits in a number
-
-Find GCD (HCF) of two numbers
-
 Find LCM of two numbers
 
 Check whether a number is Perfect
@@ -94,6 +88,11 @@ Diamond pattern */
         System.out.println(Reverse.rev(234567));
         System.out.println("Palindrone of a number");
         System.out.println(Palindrome.palindrome(1231));
+        System.out.println("Sum of digits");
+        System.out.println(SumofDigits.sum(1234));
+        System.out.println("Count of digits");
+        System.out.println(Countdigits.count(12345));
+        System.out.println(Countdigits.countofnum(123456));
 
 
 }

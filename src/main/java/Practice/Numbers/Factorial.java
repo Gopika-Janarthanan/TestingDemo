@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Numbers;
 
 public class Factorial {
     //Find Factorial of a number

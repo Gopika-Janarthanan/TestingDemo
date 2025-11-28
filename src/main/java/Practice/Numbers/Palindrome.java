@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Numbers;
 
 public class Palindrome {
     //Check if a number is Palindrome

@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Numbers;
 
 public class Fibonacci {
     //Find 1 - Nth Fibonacci number

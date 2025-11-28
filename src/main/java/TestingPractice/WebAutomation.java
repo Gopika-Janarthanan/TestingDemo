@@ -27,8 +27,6 @@ public class WebAutomation {
         d.manage().window().maximize();
         d.findElement(By.cssSelector("input#small-searchterms")).sendKeys("Computer");
         d.quit();
-
-
     }
 
 }

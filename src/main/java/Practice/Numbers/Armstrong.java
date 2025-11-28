@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Numbers;
 
 public class Armstrong {
     //Check whether a number is Armstrong
