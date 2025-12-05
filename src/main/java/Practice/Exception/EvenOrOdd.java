@@ -10,8 +10,6 @@ public class EvenOrOdd {
         evenOrOdd();
     }
 
-
-
     static void evenOrOdd(){
         Scanner input = new Scanner(System.in);
         int n;
