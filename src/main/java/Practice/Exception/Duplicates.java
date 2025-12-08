@@ -14,8 +14,7 @@ public class Duplicates {
         arr.add(40);
         arr.add(30);
         arr.add(20);
-        HashSet<Integer> set = new HashSet<>();
-        set.addAll(arr);
+        HashSet<Integer> set = new HashSet<>(arr);
         for(int i : set){
             System.out.println(i);
         }
