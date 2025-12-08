@@ -17,7 +17,7 @@ public class Buttons {
 
         By rightclick = By.id("rightClickBtn");
         By doublclick = By.id("doubleClickBtn");
-        By click = By.xpath("//button[@id=\"bhjoN\"]");
+        By click = By.xpath("//button[@id='OOmB7']");
 
         WebElement rc = d.findElement(rightclick);
         WebElement dc=d.findElement(doublclick);
