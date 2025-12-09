@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebAutomation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
       //  locators();
       // cssSelectors();
         orageHrm();
@@ -29,7 +29,7 @@ public class WebAutomation {
         d.findElement(By.cssSelector("input#small-searchterms")).sendKeys("Computer");
         d.quit();
     }
-    static void orageHrm( ){
+    static void orageHrm( ) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         //Website
         driver.get("https://www.orangehrm.com/");
@@ -40,10 +40,70 @@ public class WebAutomation {
         if(close.isDisplayed()){
             close.click();
         }
+
         //booking demo
 
         WebElement booking =driver.findElement(By.xpath("//button[@class ='nav-link ' and  text() ='Book a Free Demo']"));
         booking.click();
+        Thread.sleep(2000);
+
+        WebElement fullname = driver.findElement(By.xpath("//input[@name='FullName' ]"));
+        fullname.sendKeys("Anonymous");
+        Thread.sleep(2000);
+        fullname.submit();
+
+        WebElement email = driver.findElement(By.xpath("//input[@class='email text' and @name='Email' ]"));
+        email.sendKeys("anonymous@gmai.com");
+        Thread.sleep(2000);
+        email.submit();
+        Thread.sleep(2000);
+
+        WebElement phoneno = driver.findElement(By.xpath("//input[@class='text' and @name='Contact' ]"));
+        phoneno.sendKeys("123456789");
+        Thread.sleep(2000);
+        phoneno.submit();
+        Thread.sleep(2000);
+
+        WebElement country = driver.findElement(By.xpath("//select[@name='Country']"));
+        Thread.sleep(2000);
+        country.click();
+
+        WebElement countrydropdown = driver.findElement(By.xpath("//select[@name='Country']/child::option[97]"));
+        countrydropdown.click();
+        Thread.sleep(2000);
+        countrydropdown.submit();
+        Thread.sleep(2000);
+
+        WebElement companyname = driver.findElement(By.xpath("//input[@name='CompanyName' and @class='text']"));
+        Thread.sleep(2000);
+        companyname.sendKeys("Anonymous company");
+        Thread.sleep(2000);
+        companyname.submit();
+        Thread.sleep(2000);
+
+        WebElement jobtitle = driver.findElement(By.xpath("//input[@name='JobTitle' and @class='text']"));
+        Thread.sleep(2000);
+        jobtitle.sendKeys("Software Tester");
+        Thread.sleep(2000);
+        jobtitle.submit();
+
+        WebElement noofemp = driver.findElement(By.xpath("//select[@name='NoOfEmployees' and @class='dropdown']"));
+        Thread.sleep(2000);
+        noofemp.click();
+
+        WebElement noofempdropdown = driver.findElement(By.xpath("//select[@name='NoOfEmployees' and @class='dropdown']/child::option[4]"));
+        Thread.sleep(2000);
+        noofempdropdown.click();
+        Thread.sleep(2000);
+        noofempdropdown.submit();
+
+        Thread.sleep(5000);
+
+        WebElement captcha = driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border']"));
+        Thread.sleep(2000);
+        captcha.click();
+        Thread.sleep(2000);
+        captcha.submit();
 
 
     }
