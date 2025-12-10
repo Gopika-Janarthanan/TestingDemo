@@ -12,8 +12,8 @@ public class Flipkart {
         Actions action = new Actions(d);
         d.get("https://www.flipkart.com/");
         d.manage().window().maximize();
-//      WebElement login = d.findElement(By.xpath("//span[text()='Login']"));
-//      login.click();
+//      WebElement login.feature = d.findElement(By.xpath("//span[text()='login.feature']"));
+//      login.feature.click();
 //      WebElement phoneno = d.findElement(By.xpath("//input[@type='number' ]"));
 //      phoneno.sendKeys("1234567890");
 

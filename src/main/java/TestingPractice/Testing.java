@@ -22,7 +22,7 @@ public class Testing {
         searchbtn.click();
         Thread.sleep(2000);
 
-     //   WebElement loginnav = driver.findElement(By.className("ico-login"));
+     //   WebElement loginnav = driver.findElement(By.className("ico-login.feature"));
      //   loginnav.click();
 
         Thread.sleep(2000);
